@@ -2,28 +2,28 @@
     margin: 0 auto;
     padding: 0;
 }
- /*Here starts the header*/
+
+/*Here starts the header*/
 
 header {
     border-bottom: 1px solid #E1E1E1;
 }
-.header-content {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    /*padding: 20px 0;*/
-    align-items: center;
+
+.container-fluid {
 
 }
+
 .logo {
-  margin: 0;
+    margin: 0;
 }
+
 .logo-text {
     font-size: 33px;
     color: #000000;
     opacity: 1;
     font: Normal SosNof_U;;
 }
+
 .logo-smalltext {
     margin-left: 55px;
     font-size: 11px;
@@ -32,30 +32,20 @@ header {
     color: #7A7A7A;
     opacity: 1;
 }
-.nav {
-    width: 60%;
-    max-width: 700px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: .5rem;
 }
-.nav-content {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    width: 65%;
-    text-align: left;
-    font: Regular Droid Sans;
+
+.nav-link {
     font-size: 16px;
+    font: Regular Droid Sans;
     letter-spacing: 0.96px;
     color: #505050;
     opacity: 1;
-    margin: 0;
-    position: relative;
 }
-.nav-content li {
-    padding: 25px 0px;
-}
+
 .nav-content li:hover::after {
     content: "";
     display: block;
@@ -64,54 +54,123 @@ header {
     color: #BDD531;
     position: absolute;
 }
-.sign-up {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    width: 30%;
-    text-align: left;
-    font: Regular Droid Sans;
-    font-size: 16px;
-    letter-spacing: 0.96px;
-    color: #505050;
-    opacity: 1;
-    margin: 0;
-}
-.sign-up li {
-    padding: 25px 15px;
-    margin: 0;
-}
+
 .sign-up-first:hover {
     background: #02BFDB;
     cursor: pointer;
 }
+
 .sign-up-second:hover {
     background: #BDD531;
     cursor: pointer;
 }
+
 /*Here ends the header*/
 
 /*Here starts the main contents pane*/
+.top {
+    min-height: 90vh;
+    width: 100%;
+    position: relative;
+    background: url("img/graffiti-508272_1920.jpg") no-repeat;
+    background-position: right;
+}
+
+.backgorund-img1 img {
+    width: 70%;
+}
+
+.backgorund-img1 {
+    position: absolute;
+    top: 69px;
+    width: 94%;
+    transform: skew(20deg, 0deg);
+}
 
 .features-courses {
-    min-height: 80vh;
-    background: #7A7A7A;
-    padding-top: 30px;
-    width: 80%;
+    background: url("img/background3.PNG") no-repeat;
+    background-position: right;
 }
-.featured-title {
+
+.courses-title {
     font-size: 50px;
-    font: Bold  Droid Sans;
+    font: Bold Droid Sans;
     letter-spacing: 1.5px;
     color: #292929;
     opacity: 1;
 }
 
+.courses-text {
+    width: 60%;
+    margin: 0;
+    font-size: 16px;
+    font: Regular Droid Sans;
+    letter-spacing: 0.48px;
+    color: #292929;
+    opacity: 1;
+}
 
+.card {
+    border-radius: 6px;
+}
 
+.courses-btn {
+    font-size: 16px;
+    background: #BDD531;
+    border-radius: 6px;
+    padding: 5px 30px;
+    color: #292929;
+}
 
+.courses-btn2 {
+    font-size: 16px;
+    border: 1px solid #BDD531;
+    border-radius: 6px;
+    padding: 5px 30px;
+    background: white;
+    color: #292929;
+}
 
+.courses-btn2:hover {
+    background: #BDD531;
 
+}
+
+.btn-floating {
+    color: #BDD531;
+    position: absolute;
+    bottom: -40px;
+    font-size: 14px;
+    right: 55px;
+    border: 1px solid #BDD531;
+    padding: 1px 4px;
+}
+.btn-floating:hover {
+    color: white;
+    background: #BDD531;
+}
+.btn-floating2 {
+    color: #BDD531;
+    position: absolute;
+    bottom: -40px;
+    font-size: 14px;
+    right: 25px;
+    border: 1px solid #BDD531;
+    padding: 1px 4px;
+}
+.btn-floating2:hover {
+    color: white;
+    background: #BDD531;
+}
+.card-desk {
+    position: relative;
+}
+.courses-carousel {
+    margin: 50px 0px;
+}
+.articles {
+    background: #FAFAFA;
+}
 
 
 
