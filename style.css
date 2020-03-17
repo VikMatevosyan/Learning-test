@@ -169,11 +169,25 @@ header {
     margin: 50px 0px;
 }
 .articles {
+   margin-top: 50px;
     background: #FAFAFA;
 }
-
-
-
+.courses-text2 {
+    width: 80%;
+    margin: 0;
+    font-size: 16px;
+    font: Regular Droid Sans;
+    letter-spacing: 0.48px;
+    color: #292929;
+    opacity: 1;
+}
+.img-deer {
+    width: 331px;
+    height: 331px;
+}
+.img-deer img {
+    overflow: hidden;
+}
 
 
 
