@@ -145,10 +145,12 @@ header {
     border: 1px solid #BDD531;
     padding: 1px 4px;
 }
+
 .btn-floating:hover {
     color: white;
     background: #BDD531;
 }
+
 .btn-floating2 {
     color: #BDD531;
     position: absolute;
@@ -158,20 +160,27 @@ header {
     border: 1px solid #BDD531;
     padding: 1px 4px;
 }
+
 .btn-floating2:hover {
     color: white;
     background: #BDD531;
 }
+
 .card-desk {
     position: relative;
 }
+
 .courses-carousel {
     margin: 50px 0px;
 }
+
 .articles {
-   margin-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 25px;
     background: #FAFAFA;
+    position: relative;
 }
+
 .courses-text2 {
     width: 80%;
     margin: 0;
@@ -181,14 +190,30 @@ header {
     color: #292929;
     opacity: 1;
 }
+
 .img-deer {
-    width: 331px;
-    height: 331px;
-}
-.img-deer img {
-    overflow: hidden;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    bottom: -40px;
+    right: 350px;
 }
 
+.img-deer img {
+    width: 100%;
+}
+
+.img-brush {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    bottom: 0px;
+    right: 150px;
+}
+
+.img-brush img {
+    width: 100%;
+}
 
 
 
