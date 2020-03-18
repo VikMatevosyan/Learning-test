@@ -1,3 +1,36 @@
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('DroidSans.eot');
+    src: url('DroidSans.eot?#iefix') format('embedded-opentype'),
+    url('DroidSans.woff2') format('woff2'),
+    url('DroidSans.woff') format('woff'),
+    url('DroidSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('DroidSans-Bold.eot');
+    src: url('DroidSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('DroidSans-Bold.woff2') format('woff2'),
+    url('DroidSans-Bold.woff') format('woff'),
+    url('DroidSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-BoldItalic.eot');
+    src: url('Raleway-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('Raleway-BoldItalic.woff2') format('woff2'),
+    url('Raleway-BoldItalic.woff') format('woff'),
+    url('Raleway-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -21,13 +54,13 @@ header {
     font-size: 33px;
     color: #000000;
     opacity: 1;
-    font: Normal SosNof_U;;
+    font: Normal SosNof_U;
 }
 
 .logo-smalltext {
     margin-left: 55px;
     font-size: 11px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0;
     color: #7A7A7A;
     opacity: 1;
@@ -54,7 +87,7 @@ header {
 
 .nav-link {
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.96px;
     color: #505050;
     opacity: 1;
@@ -64,7 +97,7 @@ header {
 .nav-link::after {
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     top: 38px;
     left: 11%;
     width: 60%;
@@ -92,13 +125,16 @@ header {
     background: #02BFDB;
     cursor: pointer;
 }
+
 .sign-up-first:hover::after {
     opacity: 0;
 }
+
 .sign-up-second:hover {
     background: #BDD531;
     cursor: pointer;
 }
+
 .sign-up-second:hover::after {
     opacity: 0;
 }
@@ -109,7 +145,6 @@ header {
 .top {
     width: 100%;
     position: relative;
-    display: none;
 }
 
 .background-col {
@@ -117,10 +152,10 @@ header {
     overflow: hidden;
 }
 
-.background-col2 {
-    min-height: 90vh;
-    overflow: hidden;
-}
+/*.background-col2 {*/
+/*    min-height: 90vh;*/
+/*    overflow: hidden;*/
+/*}*/
 
 .backgorund-img img {
     width: 140%;
@@ -130,10 +165,10 @@ header {
 .backgorund-img {
     position: absolute;
     top: 0;
-    width: 65%;
+    width: 73%;
     transform: skew(20deg, 0deg);
     overflow: hidden;
-    left: -90px;
+    left: -170px;
     opacity: 0.3;
     z-index: 100;
 }
@@ -157,7 +192,8 @@ header {
 
 .courses-title {
     font-size: 50px;
-    font: Bold Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
     letter-spacing: 1.5px;
     color: #292929;
     opacity: 1;
@@ -171,7 +207,7 @@ header {
     width: 60%;
     margin: 0;
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.48px;
     color: #292929;
     opacity: 1;
@@ -211,7 +247,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 75%;
-    margin-left: 0px;
+    margin-left: 0;
     margin-bottom: 50px;
 }
 
@@ -276,23 +312,29 @@ header {
 }
 
 .courses-carousel {
-    margin: 50px 0px;
+    margin: 50px 0;
 }
 
 .carousel-col {
     margin-left: 35px;
 }
-.flex {
-    display: flex;
-    justify-content: space-between;
+
+.line {
+    font-size: 18px;
+    font-family: 'Droid Sans', sans-serif;
+    color: #8B8B8B;
+    text-decoration: line-through;
 }
+
 .dollar {
     font-size: 28px;
     text-align: left;
-    font: Bold Raleway;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 0.84px;
     color: #D35135;
 }
+
 .img {
     border-radius: 100%;
     overflow: hidden;
@@ -301,9 +343,11 @@ header {
     margin: 5px auto;
     border: 4px solid white;
 }
+
 .img img {
     width: 100%;
 }
+
 .articles-section {
     display: flex;
     justify-content: space-between;
@@ -341,7 +385,8 @@ header {
 
 .deer-title {
     font-size: 18px;
-    font: Bold Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
     letter-spacing: 0.54px;
     color: #292929;
     margin-left: 15px;
@@ -350,7 +395,7 @@ header {
 
 .deer-text {
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.48px;
     color: #292929;
     margin-left: 15px;
@@ -379,19 +424,20 @@ header {
 
 .brush-title {
     font-size: 18px;
-    font: Bold Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
     letter-spacing: 0.54px;
     color: #292929;
-    margin-left: 0px;
+    margin-left: 0;
     width: 62%;
 }
 
 .brush-text {
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.48px;
     color: #292929;
-    margin-left: 0px;
+    margin-left: 0;
     width: 90%;
 }
 
@@ -436,43 +482,45 @@ header {
 
 .body-title {
     font-size: 18px;
-    font: Bold Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
     letter-spacing: 0.54px;
     color: #292929;
-    margin-left: 0px;
+    margin-left: 0;
     width: 62%;
 }
 
 .body-text {
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.48px;
     color: #292929;
-    margin-left: 0px;
+    margin-left: 0;
     width: 90%;
 }
 
 .body2-title {
     font-size: 18px;
-    font: Bold Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
     letter-spacing: 0.54px;
     color: #292929;
-    margin-left: 0px;
+    margin-left: 0;
     width: 62%;
 }
 
 .body2-text {
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.48px;
     color: #292929;
-    margin-left: 0px;
+    margin-left: 0;
     width: 90%;
 }
 
 .questions {
     min-height: 80vh;
-    margin: 80px 0px;
+    margin: 80px 0;
     background: url("img/Clone.jpg") no-repeat right;
 }
 
@@ -489,9 +537,10 @@ header {
 
 .questions-title {
     text-align: center;
-    margin: 50px 0px;
+    margin: 50px 0;
     font-size: 50px;
-    font: Bold Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
     letter-spacing: 1.5px;
     color: #292929;
 }
@@ -526,7 +575,8 @@ header {
     margin-bottom: 40px;
     text-align: center;
     font-size: 50px;
-    font: Bold Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
     letter-spacing: 1.5px;
     color: #292929;
 }
@@ -535,7 +585,7 @@ header {
     height: 95px;
     width: 390px;
     overflow: hidden;
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 
 .student-img img {
@@ -546,7 +596,7 @@ header {
     height: 95px;
     width: 375px;
     overflow: hidden;
-    margin: 0px 10px;
+    margin: 0 10px;
 }
 
 .student-img3 img {
@@ -557,7 +607,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin: 0px 10px;
+    margin: 0 10px;
     position: relative;
 }
 
@@ -585,7 +635,7 @@ header {
 
 .student2 {
     position: relative;
-    margin: 70px 0px;
+    margin: 70px 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -626,7 +676,7 @@ header {
     position: absolute;
     width: 2%;
     height: 8%;
-    right: 718px;
+    right: 725px;
     top: 218px;
     background-color: white;
     border: 1px solid #E4E4E4;
@@ -653,14 +703,15 @@ header {
 
 .student-title {
     font-size: 25px;
-    font: Bold Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
     letter-spacing: 0.75px;
     color: #000000;
 }
 
 .student-profession {
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.48px;
     color: #000000;
 }
@@ -668,7 +719,7 @@ header {
 .student-text {
     margin: 0;
     font-size: 13px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.48px;
     color: #000000;
     width: 80%;
@@ -678,14 +729,12 @@ header {
     padding-top: 40px;
     min-height: 60vh;
     background: #333333;
-
 }
 
 .learning-title {
     margin-bottom: 0;
     text-align: center;
     font-size: 33px;
-    font: Regular Kannada MN;
     letter-spacing: 1.98px;
     color: #FFFFFF;
 }
@@ -693,7 +742,7 @@ header {
 .learning-text {
     text-align: center;
     font-size: 11px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0;
     color: #FFFFFF;
 }
@@ -705,7 +754,7 @@ header {
     justify-content: space-between;
     width: 35%;
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.96px;
     color: #FFFFFF;
 }
@@ -714,7 +763,7 @@ header {
     margin-top: 50px;
     font-size: 16px;
     text-align: center;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.96px;
     color: #FFFFFF;
     position: relative;
@@ -723,7 +772,7 @@ header {
 .join::after {
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     top: -25px;
     left: 47%;
     width: 6%;
@@ -742,14 +791,13 @@ header {
     justify-content: space-between;
     width: 17%;
     font-size: 16px;
-    font: Regular Droid Sans;
+    font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.96px;
     color: #FFFFFF;
 }
 
 .icon li {
     color: white;
-
 }
 
 .fa-facebook-f {
@@ -806,13 +854,137 @@ header {
     cursor: pointer;
 }
 
+/*Main of rec-courses*/
+.recomended-title {
+    font-weight: bold;
+    font-family: "Droid Sans", sans-serif;
+    font-size: 40px;
+    margin-left: 65px;
+    margin-top: 50px;
+    letter-spacing: 1.2px;
+    color: #292929;
+}
 
+.rec-img img {
+    width: 100%;
+}
+
+.rec-img {
+    width: 660px;
+    height: 200px;
+    margin-left: 65px;
+}
+
+.recommended {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.rec-about {
+    width: 80%;
+}
+.rec-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Droid Sans", sans-serif;
+    letter-spacing: 0.54px;
+    color: #292929;
+    width: 70%;
+    margin-left: 35px;
+}
+.rec-stars {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.rec-star-img img {
+    width: 100%;
+}
+.rec-star-img {
+    height: 35px;
+    width: 75px;
+}
+.rec-text {
+    font-size: 15px;
+    font-family: "Droid Sans", sans-serif;
+    color: #292929;
+    width: 70%;
+    margin-left: 35px;
+}
+.rec-price {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+}
+.rec-btn {
+    font-size: 16px;
+    border: 1px solid #BDD531;
+    border-radius: 6px;
+    padding: 6px 30px;
+    background: #BDD531;
+    color: #292929;
+    width: 22%;
+    margin-left: 0;
+}
+.rec-btn a{
+    color: #292929;
+}
+.rec-btn a:hover {
+    text-decoration: none;
+    color: #292929;
+}
+.rec-button {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 85%;
+}
+.prev-dollar {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    text-decoration: line-through;
+    letter-spacing: 0.72px;
+    color: #8B8B8B;
+}
+.courses-quantity {
+    width: 90%;
+    text-align: right;
+    font-size: 22px;
+    font-family: "Droid Sans", sans-serif;
+    letter-spacing: 0.66px;
+    color: #8B8B8B;
+}
+.carousel-col2 {
+    margin-left: 5px;
+}
+.carousels-set {
+    margin-bottom: 20px;
+}
+.courses-big-title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Droid Sans", sans-serif;
+    letter-spacing: 1.2px;
+    color: #292929;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.text {
+    font-size: 16px;
+   font-family: "Droid Sans", sans-serif;
+    letter-spacing: 0.48px;
+    color: #292929;
+    margin-left: 40px;
+    width: 53%;
+}
 /*Here ends the main contents pane*/
 
 /*Here starts the footer*/
 .footer {
     background: #292929;
-
 }
 
 .footer-text {
@@ -825,12 +997,7 @@ header {
     color: #C59A0B;
 }
 
-
-
-
-
-
-
+/*Here ends the footer*/
 
 
 
