@@ -110,18 +110,22 @@ header {
     width: 100%;
     position: relative;
 }
+
 .background-col {
     min-height: 90vh;
     overflow: hidden;
 }
+
 .background-col2 {
     min-height: 90vh;
     overflow: hidden;
 }
+
 .backgorund-img img {
     width: 140%;
     transform: skewX(-20deg) translate(40px, 0px);
 }
+
 .backgorund-img {
     position: absolute;
     top: 0;
@@ -140,9 +144,11 @@ header {
     overflow: hidden;
     left: 620px;
 }
+
 .backgorund-img2 img {
     width: 100%;
 }
+
 .features-courses {
     background: url("img/background3.PNG") no-repeat;
     background-position: right;
@@ -154,6 +160,10 @@ header {
     letter-spacing: 1.5px;
     color: #292929;
     opacity: 1;
+}
+
+.courses-text2 {
+
 }
 
 .courses-text {
@@ -199,8 +209,9 @@ header {
 .courses-button {
     display: flex;
     justify-content: space-between;
-    width: 45%;
+    width: 60%;
     margin-left: 0px;
+    margin-bottom: 50px;
 }
 
 .courses-button div {
@@ -271,11 +282,15 @@ header {
     margin-left: 35px;
 }
 
-.articles {
-    margin-top: 80px;
+.articles-section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.articles {
+    width: 55%;
 }
 
 .articles-img {
@@ -283,11 +298,12 @@ header {
     justify-content: space-between;
     margin-right: 0;
     margin-left: 45px;
+    margin-top: 90px;
     width: 35%;
 }
 
 .articles-text {
-    width: 50%;
+    width: 70%;
     flex-wrap: wrap;
 }
 
@@ -345,8 +361,9 @@ header {
 .imgs-set {
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    margin-right: 10px;
+    margin-right: 0;
+    margin-left: 100px;
+    width: 70%;
 }
 
 .body-img img {
