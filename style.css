@@ -107,7 +107,6 @@ header {
 
 /*Here starts the main contents pane*/
 .top {
-    min-height: 90vh;
     width: 100%;
     position: relative;
     background: url("img/graffiti-508272_1920.jpg") no-repeat;
