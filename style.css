@@ -37,15 +37,32 @@ header {
     padding-right: 1.5rem;
     padding-left: .5rem;
 }
-
+.navbar {
+    height: 100%;
+}
 .nav-link {
     font-size: 16px;
     font: Regular Droid Sans;
     letter-spacing: 0.96px;
     color: #505050;
     opacity: 1;
+    position: relative;
 }
-
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    top: 38px;
+    left: 11%;
+    width: 60%;
+    height: 2px;
+    background: #BDD531;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.nav-link:hover::after {
+    opacity: 1;
+}
 .nav-content li:hover::after {
     content: "";
     display: block;
@@ -54,12 +71,16 @@ header {
     color: #BDD531;
     position: absolute;
 }
-
+.sign-up-first:hover:after {
+    opacity: 0;
+}
 .sign-up-first:hover {
     background: #02BFDB;
     cursor: pointer;
 }
-
+.sign-up-second:hover:after {
+    opacity: 0;
+}
 .sign-up-second:hover {
     background: #BDD531;
     cursor: pointer;
@@ -76,11 +97,11 @@ header {
     background-position: right;
 }
 
-.backgorund-img1 img {
+.backgorund-img img {
     width: 70%;
 }
 
-.backgorund-img1 {
+.backgorund-img {
     position: absolute;
     top: 69px;
     width: 94%;
@@ -113,37 +134,56 @@ header {
 .card {
     border-radius: 6px;
 }
+
 .courses-buttons {
     display: flex;
-    justify-content: space-between;
-    width: 28%;
+    justify-content: flex-start;
     margin-left: 50px;
+    flex-wrap: wrap;
 }
+
 .courses-buttons div {
     margin: 0;
 }
 
 .courses-btn {
     font-size: 16px;
+    border: 1px solid #BDD531;
     border-radius: 6px;
     padding: 5px 30px;
+    background: #BDD531;
+    color: #292929;
+    margin-right: 15px;
+}
+
+.courses-btn:hover {
+    text-decoration: none;
     color: #292929;
 }
+
 .courses-button {
     display: flex;
     justify-content: space-between;
     width: 45%;
     margin-left: 0px;
 }
+
 .courses-button div {
     margin: 0;
 }
+
 .courses-btn2 {
     font-size: 16px;
     border: 1px solid #BDD531;
     border-radius: 6px;
     padding: 5px 30px;
     background: white;
+    color: #292929;
+    transition: all 0.5s;
+}
+
+.courses-btn2:hover {
+    text-decoration: none;
     color: #292929;
 }
 
@@ -160,6 +200,7 @@ header {
     right: 40px;
     border: 1px solid #BDD531;
     padding: 1px 4px;
+    transition: all 0.5s;
 }
 
 .btn-floating:hover {
@@ -175,6 +216,7 @@ header {
     right: 4px;
     border: 1px solid #BDD531;
     padding: 1px 4px;
+    transition: all 0.5s;
 }
 
 .btn-floating2:hover {
@@ -189,14 +231,18 @@ header {
 .courses-carousel {
     margin: 50px 0px;
 }
+
 .carousel-col {
     margin-left: 35px;
 }
+
 .articles {
     margin-top: 80px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 .articles-img {
     display: flex;
     justify-content: space-between;
@@ -204,23 +250,30 @@ header {
     margin-left: 45px;
     width: 35%;
 }
+
 .articles-text {
     width: 50%;
+    flex-wrap: wrap;
 }
+
 .deer-img img {
     width: 100%;
 }
+
 .deer-img {
     width: 240px;
     height: 200px;
+    margin-right: 15px;
 }
+
 .deer-title {
     font-size: 18px;
-    font: Bold  Droid Sans;
+    font: Bold Droid Sans;
     letter-spacing: 0.54px;
     color: #292929;
     margin-left: 15px;
 }
+
 .deer-text {
     font-size: 16px;
     font: Regular Droid Sans;
@@ -228,20 +281,24 @@ header {
     color: #292929;
     margin-left: 15px;
 }
+
 .brush-img img {
     width: 100%;
 }
+
 .brush-img {
     width: 200px;
     height: 150px;
 }
+
 .brush-title {
     font-size: 18px;
-    font: Bold  Droid Sans;
+    font: Bold Droid Sans;
     letter-spacing: 0.54px;
     color: #292929;
     margin-left: 15px;
 }
+
 .brush-text {
     font-size: 16px;
     font: Regular Droid Sans;
@@ -249,21 +306,25 @@ header {
     color: #292929;
     margin-left: 15px;
 }
+
 .imgs-set {
     display: flex;
     justify-content: space-between;
     width: 50%;
     margin-right: 10px;
 }
+
 .body-img img {
-     width: 100%;
- }
+    width: 100%;
+}
+
 .body-img {
     margin-left: 0;
     width: 200px;
     height: 285px;
     position: relative;
 }
+
 .read-more {
     color: #fff;
     background-color: #BDD531;
@@ -275,9 +336,11 @@ header {
     backface-visibility: hidden;
     transition: all 0.8s
 }
+
 .body2-img img {
     width: 100%;
 }
+
 .body2-img {
     width: 305px;
     height: 285px;
@@ -475,12 +538,14 @@ header {
     color: #000000;
     width: 80%;
 }
+
 .about {
     padding-top: 50px;
     min-height: 70vh;
     background: #333333;
 
 }
+
 .learning-title {
     margin-bottom: 0;
     text-align: center;
@@ -489,6 +554,7 @@ header {
     letter-spacing: 1.98px;
     color: #FFFFFF;
 }
+
 .learning-text {
     text-align: center;
     font-size: 11px;
@@ -496,6 +562,7 @@ header {
     letter-spacing: 0;
     color: #FFFFFF;
 }
+
 .menulist {
     margin-top: 50px;
     list-style: none;
@@ -507,6 +574,7 @@ header {
     letter-spacing: 0.96px;
     color: #FFFFFF;
 }
+
 .join {
     margin-top: 50px;
     font-size: 16px;
@@ -516,6 +584,7 @@ header {
     color: #FFFFFF;
     position: relative;
 }
+
 .join::after {
     content: "";
     position: absolute;
@@ -526,30 +595,77 @@ header {
     height: 1px;
     background: white;
 }
+
 .social-media {
     margin-bottom: 50px;
 }
+
 .media {
     margin-top: 50px;
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 20%;
+    width: 17%;
     font-size: 16px;
     font: Regular Droid Sans;
     letter-spacing: 0.96px;
     color: #FFFFFF;
 }
 
-.icon li{
+.icon li {
     color: white;
+
 }
-.icon i {
-    padding: 5px 10px;
+
+.fa-facebook-f {
+    padding: 5px 11px;
     border: 1px solid #292929;
     background: #292929;
+    transition: all 0.5s;
+    border-radius: 3px;
 }
-.icon i:hover{
+
+.fa-twitter {
+    padding: 5px 7px;
+    border: 1px solid #292929;
+    background: #292929;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+.fa-google-plus-g {
+    padding: 5px 6px;
+    border: 1px solid #292929;
+    background: #292929;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+.fa-pinterest-p {
+    padding: 5px 9px;
+    border: 1px solid #292929;
+    background: #292929;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+.fa-instagram {
+    padding: 5px 9px;
+    border: 1px solid #292929;
+    background: #292929;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+.fa-linkedin-in {
+    padding: 5px 9px;
+    border: 1px solid #292929;
+    background: #292929;
+    transition: all 0.5s;
+    border-radius: 3px;
+}
+
+.icon i:hover {
     border: 1px solid #BDD531;
     background: #BDD531;
     cursor: pointer;
@@ -563,11 +679,13 @@ header {
     background: #292929;
 
 }
+
 .footer-text {
     display: flex;
     justify-content: space-between;
     color: white;
 }
+
 .copyright a {
     color: #C59A0B;
 }
