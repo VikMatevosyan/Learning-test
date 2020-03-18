@@ -282,7 +282,28 @@ header {
 .carousel-col {
     margin-left: 35px;
 }
-
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.dollar {
+    font-size: 28px;
+    text-align: left;
+    font: Bold Raleway;
+    letter-spacing: 0.84px;
+    color: #D35135;
+}
+.img {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    margin: 5px auto;
+    border: 4px solid white;
+}
+.img img {
+    width: 100%;
+}
 .articles-section {
     display: flex;
     justify-content: space-between;
