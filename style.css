@@ -109,10 +109,12 @@ header {
 .top {
     width: 100%;
     position: relative;
-    background: url("img/graffiti-508272_1920.jpg") no-repeat;
-    background-position: right;
 }
 .background-col {
+    min-height: 90vh;
+    overflow: hidden;
+}
+.background-col2 {
     min-height: 90vh;
     overflow: hidden;
 }
@@ -120,7 +122,6 @@ header {
     width: 140%;
     transform: skewX(-20deg) translate(40px, 0px);
 }
-
 .backgorund-img {
     position: absolute;
     top: 0;
@@ -129,8 +130,19 @@ header {
     overflow: hidden;
     left: -90px;
     opacity: 0.3;
+    z-index: 100;
 }
 
+.backgorund-img2 {
+    position: absolute;
+    top: 0;
+    width: 55%;
+    overflow: hidden;
+    left: 620px;
+}
+.backgorund-img2 img {
+    width: 100%;
+}
 .features-courses {
     background: url("img/background3.PNG") no-repeat;
     background-position: right;
