@@ -38,7 +38,7 @@ header {
     padding-left: .5rem;
 }
 
-.navbar-light .navbar-nav .nav-link:not([class*="sign-up"]):after {
+.nav-link::after {
     content: "";
     display: block;
     width: 100%;
@@ -46,10 +46,6 @@ header {
     background: #BDD531;
     opacity: 0;
     transition: opacity 0.3s;
-}
-
-.navbar-light .navbar-nav .nav-link:not([class*="sign-up"]):hover:after {
-    opacity: 1;
 }
 
 .navbar {
@@ -96,12 +92,16 @@ header {
     background: #02BFDB;
     cursor: pointer;
 }
-
+.sign-up-first:hover::after {
+    opacity: 0;
+}
 .sign-up-second:hover {
     background: #BDD531;
     cursor: pointer;
 }
-
+.sign-up-second:hover::after {
+    opacity: 0;
+}
 
 /*Here ends the header*/
 
@@ -109,6 +109,7 @@ header {
 .top {
     width: 100%;
     position: relative;
+    display: none;
 }
 
 .background-col {
@@ -140,7 +141,7 @@ header {
 .backgorund-img2 {
     position: absolute;
     top: 0;
-    width: 55%;
+    width: 52%;
     overflow: hidden;
     left: 620px;
 }
@@ -209,7 +210,7 @@ header {
 .courses-button {
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    width: 75%;
     margin-left: 0px;
     margin-bottom: 50px;
 }
@@ -290,21 +291,20 @@ header {
 }
 
 .articles {
-    width: 55%;
+    width: 50%;
+    min-width: 570px;
 }
 
 .articles-img {
     display: flex;
     justify-content: space-between;
-    margin-right: 0;
-    margin-left: 45px;
     margin-top: 90px;
-    width: 35%;
+    width: 50%;
+    min-width: 570px;
 }
 
 .articles-text {
     width: 70%;
-    flex-wrap: wrap;
 }
 
 .deer-img img {
@@ -314,7 +314,8 @@ header {
 .deer-img {
     width: 240px;
     height: 200px;
-    margin-right: 15px;
+    margin-right: 10px;
+    margin-left: 20px;
 }
 
 .deer-title {
@@ -323,6 +324,7 @@ header {
     letter-spacing: 0.54px;
     color: #292929;
     margin-left: 15px;
+    width: 58%;
 }
 
 .deer-text {
@@ -331,6 +333,17 @@ header {
     letter-spacing: 0.48px;
     color: #292929;
     margin-left: 15px;
+    width: 80%;
+}
+
+.deer {
+    margin-left: 15px;
+    width: 80%;
+
+}
+
+.brush {
+
 }
 
 .brush-img img {
@@ -340,6 +353,7 @@ header {
 .brush-img {
     width: 200px;
     height: 150px;
+    margin-left: 0;
 }
 
 .brush-title {
@@ -347,7 +361,8 @@ header {
     font: Bold Droid Sans;
     letter-spacing: 0.54px;
     color: #292929;
-    margin-left: 15px;
+    margin-left: 0px;
+    width: 62%;
 }
 
 .brush-text {
@@ -355,15 +370,15 @@ header {
     font: Regular Droid Sans;
     letter-spacing: 0.48px;
     color: #292929;
-    margin-left: 15px;
+    margin-left: 0px;
+    width: 90%;
 }
 
 .imgs-set {
     display: flex;
     justify-content: space-between;
-    margin-right: 0;
-    margin-left: 100px;
-    width: 70%;
+    margin-right: 10px;
+    width: 90%;
 }
 
 .body-img img {
@@ -398,8 +413,44 @@ header {
     height: 285px;
 }
 
+.body-title {
+    font-size: 18px;
+    font: Bold Droid Sans;
+    letter-spacing: 0.54px;
+    color: #292929;
+    margin-left: 0px;
+    width: 62%;
+}
+
+.body-text {
+    font-size: 16px;
+    font: Regular Droid Sans;
+    letter-spacing: 0.48px;
+    color: #292929;
+    margin-left: 0px;
+    width: 90%;
+}
+
+.body2-title {
+    font-size: 18px;
+    font: Bold Droid Sans;
+    letter-spacing: 0.54px;
+    color: #292929;
+    margin-left: 0px;
+    width: 62%;
+}
+
+.body2-text {
+    font-size: 16px;
+    font: Regular Droid Sans;
+    letter-spacing: 0.48px;
+    color: #292929;
+    margin-left: 0px;
+    width: 90%;
+}
+
 .questions {
-    min-width: 80vh;
+    min-height: 80vh;
     margin: 80px 0px;
     background: url("img/Clone.jpg") no-repeat right;
 }
@@ -432,9 +483,22 @@ header {
     border-bottom: 1px solid #C5C5C5;
 }
 
+.all-students {
+    display: flex;
+}
+
 .students {
     position: relative;
     margin-bottom: 280px;
+}
+
+.students-set2 {
+    margin-top: 160px;
+    min-width: 450px;
+}
+
+.students-set1 {
+    min-width: 450px;
 }
 
 .students-title {
@@ -471,7 +535,7 @@ header {
 .student1 {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
     margin: 0px 10px;
     position: relative;
 }
@@ -503,7 +567,7 @@ header {
     margin: 70px 0px;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 100%;
 }
 
 .student2::after {
@@ -531,10 +595,8 @@ header {
 .student3 {
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    top: 250px;
+    width: 100%;
+    position: relative;
 }
 
 .student3::after {
@@ -543,29 +605,29 @@ header {
     position: absolute;
     width: 2%;
     height: 8%;
-    right: 729px;
-    top: 252px;
+    right: 718px;
+    top: 218px;
     background-color: white;
     border: 1px solid #E4E4E4;
 }
 
 .student3::before {
+    display: block;
     content: "";
     position: absolute;
-    right: 61px;
-    top: -60px;
-    width: 1px;
-    bottom: -2px;
     background: #eee;
+    width: 1px;
+    top: 236px;
+    right: 725px;
+    bottom: 17px;
 }
 
 .student4 {
     display: flex;
     justify-content: space-between;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    top: 550px;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
 }
 
 .student-title {

@@ -1,0 +1,156 @@
+@media screen and (max-width: 1338px) {
+    .student3::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 2%;
+        height: 8%;
+        right: 712px;
+        top: 218px;
+        background-color: white;
+        border: 1px solid #E4E4E4;
+    }
+}
+@media screen and (max-width: 1193px) {
+    .plus {
+        width: 4%;
+        border: 1px solid #BDD531;
+        padding: 0 3px;
+        margin-bottom: 13px;
+    }
+}
+
+@media screen and (max-width: 1156px) {
+    .imgs-set {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+        width: 100%;
+    }
+
+    .articles-img {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+
+    .articles-text {
+        width: 70%;
+        margin-left: 35px;
+    }
+
+    .brush-text {
+        width: 68%;
+        font-size: 16px;
+        font: Regular Droid Sans;
+        letter-spacing: 0.48px;
+        color: #292929;
+        margin-left: 0px;
+    }
+
+    .deer {
+        margin-left: 0px;
+    }
+
+    .questions {
+        font-size: 12px;
+
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .student-text {
+        font-size: 11px;
+    }
+
+    .student1::after {
+        opacity: 0;
+    }
+
+    .student2::after {
+        opacity: 0;
+    }
+
+    .student3::after {
+        opacity: 0;
+    }
+
+    .student4::after {
+        opacity: 0;
+    }
+
+    .student1::before {
+        opacity: 0;
+    }
+
+    .student2::before {
+        opacity: 0;
+    }
+
+    .student3::before {
+        opacity: 0;
+    }
+
+    .student4::before {
+        opacity: 0;
+    }
+
+    .all-students {
+        flex-wrap: wrap;
+    }
+
+    .students-set2 {
+        margin-top: 0;
+    }
+    .menulist {
+        width: 70%;
+    }
+    .footer-text {
+        flex-wrap: wrap;
+    }
+    .media {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .imgs-set {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-right: 10px;
+        width: 100%;
+    }
+
+    .body2 {
+        margin-top: 50px;
+    }
+
+    .body-img {
+        margin-left: 0;
+    }
+
+    .body2-text {
+        font-size: 13px;
+    }
+
+    .articles-text {
+        width: 70%;
+        margin-left: 15px;
+    }
+
+    .student1 {
+        flex-wrap: wrap;
+    }
+
+    .student2 {
+        flex-wrap: wrap;
+    }
+
+    .student3 {
+        flex-wrap: wrap;
+    }
+
+    .student4 {
+        flex-wrap: wrap;
+    }
+}
