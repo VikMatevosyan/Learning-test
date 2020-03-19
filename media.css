@@ -10,7 +10,18 @@
         background-color: white;
         border: 1px solid #E4E4E4;
     }
+
+    .start {
+        width: 60%;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Droid Sans", sans-serif;
+        letter-spacing: 0;
+        color: #000000;
+        text-shadow: 0 3px 6px #00000036;
+    }
 }
+
 @media screen and (max-width: 1193px) {
     .plus {
         width: 4%;
@@ -41,14 +52,14 @@
     .brush-text {
         width: 68%;
         font-size: 16px;
-        font: Regular Droid Sans;
+        font-family: "Droid Sans", sans-serif;
         letter-spacing: 0.48px;
         color: #292929;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .deer {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .questions {
@@ -101,12 +112,15 @@
     .students-set2 {
         margin-top: 0;
     }
+
     .menulist {
         width: 70%;
     }
+
     .footer-text {
         flex-wrap: wrap;
     }
+
     .media {
         width: 60%;
     }

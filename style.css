@@ -1,4 +1,15 @@
 @font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-BlackItalic.eot');
+    src: url('PlayfairDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+    url('PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+    url('PlayfairDisplay-BlackItalic.woff') format('woff'),
+    url('PlayfairDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
     font-family: 'Droid Sans';
     src: url('DroidSans.eot');
     src: url('DroidSans.eot?#iefix') format('embedded-opentype'),
@@ -36,6 +47,10 @@
     padding: 0;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /*Here starts the header*/
 
 header {
@@ -54,14 +69,14 @@ header {
     font-size: 33px;
     color: #000000;
     opacity: 1;
-    font: Normal SosNof_U;
+    font-family: 'Playfair Display', italic;
+    font-weight: 900;
 }
 
 .logo-smalltext {
     margin-left: 55px;
     font-size: 11px;
     font-family: 'Droid Sans', sans-serif;
-    letter-spacing: 0;
     color: #7A7A7A;
     opacity: 1;
 }
@@ -82,7 +97,7 @@ header {
 }
 
 .navbar {
-    height: 100%;
+    height: 85%;
 }
 
 .nav-link {
@@ -148,41 +163,93 @@ header {
 }
 
 .background-col {
-    min-height: 90vh;
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
 }
 
-/*.background-col2 {*/
-/*    min-height: 90vh;*/
-/*    overflow: hidden;*/
-/*}*/
-
-.backgorund-img img {
-    width: 140%;
-    transform: skewX(-20deg) translate(40px, 0px);
-}
-
-.backgorund-img {
-    position: absolute;
-    top: 0;
-    width: 73%;
-    transform: skew(20deg, 0deg);
-    overflow: hidden;
-    left: -170px;
+.background-img img {
+    width: 102%;
+    transform: skewX(-11deg) translate(40px, 0px);
     opacity: 0.3;
-    z-index: 100;
 }
 
-.backgorund-img2 {
+.background-img {
+    width: 63%;
+    overflow: hidden;
+    transform: skew(14deg, 0deg);
     position: absolute;
     top: 0;
-    width: 52%;
-    overflow: hidden;
-    left: 620px;
+    left: -73px;
+    background: white;
 }
 
-.backgorund-img2 img {
+.background-img2 img {
     width: 100%;
+    overflow: hidden;
+}
+
+.background-img2 {
+    width: 64%;
+    margin-right: 0;
+    overflow: hidden;
+}
+
+.started {
+    position: absolute;
+    top: 200px;
+    right: 400px;
+}
+
+.start {
+    width: 60%;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Droid Sans", sans-serif;
+    letter-spacing: 0;
+    color: #000000;
+    text-shadow: 0 3px 6px #00000036;
+}
+
+.start-buttons {
+    margin-top: 50px;
+    width: 60%;
+}
+
+.a-second {
+    font-size: 16px;
+    border: 1px solid #BDD531;
+    border-radius: 6px;
+    padding: 5px 30px;
+    background: transparent;
+    color: #292929;
+    transition: all 0.5s;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.a-second:hover {
+    text-decoration: none;
+    color: #292929;
+    background: #BDD531;
+    cursor: pointer;
+}
+
+.a-first {
+    font-size: 16px;
+    border: 1px solid #BDD531;
+    border-radius: 6px;
+    padding: 5px 30px;
+    background: #BDD531;
+    color: #292929;
+    transition: all 0.5s;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.a-first:hover {
+    text-decoration: none;
+    color: #292929;
+    cursor: pointer;
 }
 
 .features-courses {
@@ -192,15 +259,12 @@ header {
 
 .courses-title {
     font-size: 50px;
+    margin-top: 50px;
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 1.5px;
     color: #292929;
     opacity: 1;
-}
-
-.courses-text2 {
-
 }
 
 .courses-text {
@@ -381,6 +445,7 @@ header {
     height: 200px;
     margin-right: 10px;
     margin-left: 20px;
+    position: relative;
 }
 
 .deer-title {
@@ -405,12 +470,8 @@ header {
 .deer {
     margin-left: 15px;
     width: 80%;
-
 }
 
-.brush {
-
-}
 
 .brush-img img {
     width: 100%;
@@ -420,6 +481,7 @@ header {
     width: 200px;
     height: 150px;
     margin-left: 0;
+    position: relative;
 }
 
 .brush-title {
@@ -450,6 +512,7 @@ header {
 
 .body-img img {
     width: 100%;
+    display: block;
 }
 
 .body-img {
@@ -457,28 +520,121 @@ header {
     width: 200px;
     height: 285px;
     position: relative;
-}
-
-.read-more {
-    color: #fff;
-    background-color: #BDD531;
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    transform: rotateY(180deg);
     backface-visibility: hidden;
-    transition: all 0.8s
+    transition: all 0.8s;
 }
 
 .body2-img img {
     width: 100%;
+    display: block;
 }
 
 .body2-img {
     width: 305px;
     height: 285px;
+    position: relative;
+    backface-visibility: hidden;
+    transition: all 0.8s;
 }
+
+.read-more {
+    color: #fff;
+    padding-top: 235px;
+    background-color: #BDD531;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 93%;
+    width: 65%;
+    backface-visibility: hidden;
+    transition: all 0.8s
+}
+
+.read-more-body2 {
+    color: #fff;
+    background-color: #BDD531;
+    padding-top: 235px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 94%;
+    width: 50%;
+    backface-visibility: hidden;
+    transition: all 1s;
+}
+
+.read-more-deer {
+    color: #fff;
+    background-color: #BDD531;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 80%;
+    width: 65%;
+    backface-visibility: hidden;
+    transition: all 1s;
+    padding: 20px 5px;
+}
+
+.read-more-brush {
+    color: #fff;
+    background-color: #BDD531;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    height: 89%;
+    width: 65%;
+    backface-visibility: hidden;
+    transition: all 1s;
+    padding: 20px 5px;
+}
+
+.read-more a {
+    color: white;
+}
+
+.read-more-body2 a {
+    color: white;
+}
+
+.read-more-brush a {
+    color: white;
+}
+
+.read-more-deer a {
+    color: white;
+}
+
+.body-img:hover .read-more {
+    right: 35%;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.body2-img:hover .read-more-body2 {
+    right: 1px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.brush-img:hover .read-more-brush {
+    right: 35%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.deer-img:hover .read-more-deer {
+    right: 35%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
 
 .body-title {
     font-size: 18px;
@@ -615,9 +771,9 @@ header {
     content: "";
     display: block;
     position: absolute;
-    width: 2%;
-    height: 8%;
-    right: 65px;
+    width: 15px;
+    height: 15px;
+    right: 64px;
     top: 60px;
     background-color: white;
     border: 1px solid #E4E4E4;
@@ -645,9 +801,9 @@ header {
     content: "";
     display: block;
     position: absolute;
-    width: 2%;
-    height: 8%;
-    right: 55px;
+    width: 15px;
+    height: 15px;
+    right: 54px;
     top: -61px;
     background-color: white;
     border: 1px solid #E4E4E4;
@@ -659,7 +815,7 @@ header {
     right: 61px;
     top: -60px;
     width: 1px;
-    bottom: -2px;
+    bottom: 42px;
     background: #eee;
 }
 
@@ -674,23 +830,12 @@ header {
     content: "";
     display: block;
     position: absolute;
-    width: 2%;
-    height: 8%;
+    width: 15px;
+    height: 15px;
     right: 725px;
-    top: 218px;
+    top: 173px;
     background-color: white;
     border: 1px solid #E4E4E4;
-}
-
-.student3::before {
-    display: block;
-    content: "";
-    position: absolute;
-    background: #eee;
-    width: 1px;
-    top: 236px;
-    right: 725px;
-    bottom: 17px;
 }
 
 .student4 {
@@ -700,6 +845,29 @@ header {
     position: relative;
     margin-top: 50px;
 }
+
+.student4::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 725px;
+    top: 138px;
+    background-color: white;
+    border: 1px solid #E4E4E4;
+}
+
+.student4::before {
+    content: "";
+    position: absolute;
+    right: 731px;
+    top: -15px;
+    width: 1px;
+    bottom: 15px;
+    background: #eee;
+}
+
 
 .student-title {
     font-size: 25px;
@@ -757,6 +925,15 @@ header {
     font-family: 'Droid Sans', sans-serif;
     letter-spacing: 0.96px;
     color: #FFFFFF;
+}
+
+.menulist a {
+    color: #FFFFFF;
+}
+
+.menulist a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .join {
@@ -880,9 +1057,11 @@ header {
     justify-content: space-between;
     margin-bottom: 50px;
 }
+
 .rec-about {
     width: 80%;
 }
+
 .rec-title {
     font-size: 18px;
     font-weight: bold;
@@ -892,6 +1071,7 @@ header {
     width: 70%;
     margin-left: 35px;
 }
+
 .rec-stars {
     display: flex;
     justify-content: flex-start;
@@ -899,13 +1079,16 @@ header {
     margin-left: 30px;
     margin-top: 10px;
 }
+
 .rec-star-img img {
     width: 100%;
 }
+
 .rec-star-img {
     height: 35px;
     width: 75px;
 }
+
 .rec-text {
     font-size: 15px;
     font-family: "Droid Sans", sans-serif;
@@ -913,11 +1096,13 @@ header {
     width: 70%;
     margin-left: 35px;
 }
+
 .rec-price {
     display: flex;
     width: 15%;
     justify-content: center;
 }
+
 .rec-btn {
     font-size: 16px;
     border: 1px solid #BDD531;
@@ -928,13 +1113,16 @@ header {
     width: 22%;
     margin-left: 0;
 }
-.rec-btn a{
+
+.rec-btn a {
     color: #292929;
 }
+
 .rec-btn a:hover {
     text-decoration: none;
     color: #292929;
 }
+
 .rec-button {
     display: flex;
     justify-content: flex-start;
@@ -942,6 +1130,7 @@ header {
     margin-left: 35px;
     width: 85%;
 }
+
 .prev-dollar {
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
@@ -949,6 +1138,7 @@ header {
     letter-spacing: 0.72px;
     color: #8B8B8B;
 }
+
 .courses-quantity {
     width: 90%;
     text-align: right;
@@ -957,12 +1147,15 @@ header {
     letter-spacing: 0.66px;
     color: #8B8B8B;
 }
+
 .carousel-col2 {
     margin-left: 5px;
 }
+
 .carousels-set {
     margin-bottom: 20px;
 }
+
 .courses-big-title {
     font-size: 40px;
     font-weight: bold;
@@ -972,14 +1165,16 @@ header {
     margin-left: 40px;
     margin-top: 40px;
 }
+
 .text {
     font-size: 16px;
-   font-family: "Droid Sans", sans-serif;
+    font-family: "Droid Sans", sans-serif;
     letter-spacing: 0.48px;
     color: #292929;
     margin-left: 40px;
     width: 53%;
 }
+
 /*Here ends the main contents pane*/
 
 /*Here starts the footer*/
