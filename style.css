@@ -685,9 +685,9 @@ header {
 }
 
 .plus {
-    width: 4%;
+    width: 28px;
     border: 1px solid #BDD531;
-    padding: 8px 5px;
+    padding: 4px 6px;
     margin-bottom: 6px;
 }
 
